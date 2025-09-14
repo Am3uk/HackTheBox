@@ -22,3 +22,10 @@ so, lets see if it accept these credentials
 --Login for Meow: root
 
 Boom, we got the access
+
+searching for interesting things and the flag.txt
+-ls
+--flag.txt snap
+-cat flag.txt
+
+the cat command show us the content of a file
